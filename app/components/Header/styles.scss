@@ -1,0 +1,17 @@
+.header {
+  width: 100%;
+  border: 1px solid var(--black-12);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border: 1px solid var(--black-12);
+  }
+
+  &__logo {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

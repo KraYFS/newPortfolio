@@ -1,7 +1,10 @@
 import './globals.scss'
+import './variables.scss'
 
 import type { Metadata } from 'next'
 import { Manrope } from 'next/font/google'
+
+import Header from './components/Header/Header'
 
 const manRopeSans = Manrope({
   variable: '--font-manrope-sans',
@@ -16,7 +19,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html lang='en' className={`${manRopeSans.variable}`}>
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }

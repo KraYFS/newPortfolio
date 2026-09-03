@@ -1,0 +1,15 @@
+.button {
+  position: relative;
+  padding: 16px 24px;
+  color: var(--absolute-white);
+  background-color: var(--black-12);
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 1px 1px 1px 0 var(--black-20);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: var(--black-8);
+    box-shadow: inset -1px -1px 1px 0 var(--black-20);
+  }
+}

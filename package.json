@@ -7,10 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "prettier": "npx prettier --check 'src/**/*.{js,ts,jsx,tsx,css,scss,html,json,md}'",
-    "prettier:fix": "npx prettier --write 'src/**/*.{js,ts,jsx,tsx,css,scss,html,json,md}'",
-    "lint:styles": "stylelint 'src/**/*.{scss,css}'",
-    "lint:styles:fix": "stylelint 'src/**/*.{scss,css}' --fix"
+    "prettier": "npx prettier --check 'app/**/*.{js,ts,jsx,tsx,css,scss,html,json,md}'",
+    "prettier:fix": "npx prettier --write 'app/**/*.{js,ts,jsx,tsx,css,scss,html,json,md}'"
   },
   "dependencies": {
     "next": "16.3.4",
@@ -21,6 +19,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "clsx": "^2.1.1",
     "eslint": "^9",
     "eslint-config-next": "16.3.4",
     "eslint-plugin-simple-import-sort": "^14.0.0",

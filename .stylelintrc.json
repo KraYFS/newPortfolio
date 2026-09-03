@@ -6,13 +6,6 @@
   "rules": {
     "at-rule-no-unknown": null,
     "scss/at-rule-no-unknown": true,
-    "selector-class-pattern": null,
-    "plugin/selector-bem-pattern": {
-      "componentName": "[A-Z]+",
-      "componentSelectors": {
-        "initial": "^\\.{componentName}(?:__[a-z0-9-]+)?(?:--[a-z0-9-]+)?$"
-      },
-      "utilitySelectors": "^\\.util-[a-z]+$"
-    }
+    "selector-class-pattern": null
   }
 }

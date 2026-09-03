@@ -1,0 +1,29 @@
+.nav {
+  display: flex;
+  padding-top: 30px;
+
+  &__link {
+    padding: 30px 40px;
+    color: var(--gray-70);
+    border: 1px solid var(--black-12);
+    transition: all 0.3s ease-in-out;
+
+    &--active {
+      color: var(--absolute-white);
+      background-color: var(--black-8);
+    }
+
+    &:first-child {
+      border-radius: 12px 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 12px 0 0;
+    }
+
+    &:hover {
+      color: var(--absolute-white);
+      background-color: var(--black-8);
+    }
+  }
+}

@@ -16,6 +16,7 @@
 }
 
 a {
+  color: var(--absolute-white);
   text-decoration: none;
 }
 
@@ -34,10 +35,10 @@ aside {
 html,
 body {
   overflow: auto;
-  font-family: Montserrat, sans-serif;
-  font-size: 100%;
-  font-size: 14px;
-  color: var(--text-color);
+  font-family: Manrope, sans-serif;
+  font-size: 18px;
+  color: var(--absolute-white);
+  background: var(--black-3);
   text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
@@ -81,7 +82,7 @@ h6 {
 
 .container {
   width: 100%;
-  max-width: 1470px;
+  max-width: 1596px;
   margin: 0 auto;
 }
 
