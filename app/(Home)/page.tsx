@@ -1,11 +1,13 @@
 import './styles.scss'
 
+import Hero from './sections/Hero/Hero'
+
 export default function Home() {
   return (
     <main>
-      <br />
-      <h1>Welcome to My Portfolio</h1>
-      <p>This is a simple portfolio page built with Next.js and Sass.</p>
+      <div className='container'>
+        <Hero />
+      </div>
     </main>
   )
 }

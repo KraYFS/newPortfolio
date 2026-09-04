@@ -86,26 +86,20 @@ h6 {
   margin: 0 auto;
 }
 
-@media screen and (width <= 1600px) {
+@media screen and (width <= 1596px) {
   .container {
-    max-width: 1200px;
+    max-width: 1280px;
   }
 }
 
-@media screen and (width <= 1290px) {
+@media screen and (width <= 1280px) {
   .container {
-    max-width: 800px;
+    max-width: 1240px;
   }
 }
 
-@media screen and (width <= 860px) {
+@media screen and (width <= 1240px) {
   .container {
-    max-width: 550px;
-  }
-}
-
-@media screen and (width <= 550px) {
-  .container {
-    max-width: 430px;
+    max-width: 350px;
   }
 }

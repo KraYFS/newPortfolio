@@ -1,5 +1,13 @@
 import './styles.scss'
 
-export default function Button({ text }: { text: string }) {
-  return <button className='button'>{text}</button>
+import clsx from 'clsx'
+
+export default function Button({
+  text,
+  className
+}: {
+  text: string
+  className?: string
+}) {
+  return <button className={clsx('button', className)}>{text}</button>
 }

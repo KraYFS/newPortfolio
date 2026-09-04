@@ -10,7 +10,7 @@ export default function Header() {
         <div className='header__inner'>
           <h1 className='header__logo'>Logo</h1>
           <NavBar />
-          <Button text='Contact Me' />
+          <Button className='header__button' text='Contact Me' />
         </div>
       </div>
     </header>

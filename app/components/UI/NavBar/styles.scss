@@ -26,4 +26,35 @@
       background-color: var(--black-8);
     }
   }
+
+  &__btn {
+    display: none;
+    flex-direction: column;
+    align-items: end;
+    gap: 4px;
+
+    &-line {
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: var(--absolute-white);
+      border-radius: 10px;
+
+      &:last-child {
+        width: 10px;
+      }
+    }
+  }
+
+  @media screen and (width <= 1240px) {
+    padding: 27px 23px;
+
+    &__link {
+      display: none;
+    }
+
+    &__btn {
+      display: flex;
+    }
+  }
 }

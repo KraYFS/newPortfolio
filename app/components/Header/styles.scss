@@ -14,4 +14,14 @@
     font-weight: 700;
     text-transform: uppercase;
   }
+
+  @media screen and (width <= 1240px) {
+    &__button {
+      display: none;
+    }
+
+    &__inner {
+      padding: 0 0 0 16px;
+    }
+  }
 }
