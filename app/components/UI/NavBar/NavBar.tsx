@@ -29,11 +29,13 @@ export default function NavBar() {
           {link.label}
         </Link>
       ))}
-      <div className='nav__btn'>
+
+      {/* fix bug after responsive */}
+      {/* <div className='nav__btn'>
         <span className='nav__btn-line'></span>
         <span className='nav__btn-line'></span>
         <span className='nav__btn-line'></span>
-      </div>
+      </div> */}
     </nav>
   )
 }
