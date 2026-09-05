@@ -1,10 +1,13 @@
 import './styles.scss'
 
+import CtaButton from '@/app/components/UI/CtaButton/CtaButton'
+
 export default function Hero() {
   return (
     <section className='hero'>
-      <h1>Welcome to My Portfolio</h1>
-      <p>Discover my work and get in touch!</p>
+      <div className='hero__cta'>
+        <CtaButton text='Contact Me' href='/contact' />
+      </div>
     </section>
   )
 }
