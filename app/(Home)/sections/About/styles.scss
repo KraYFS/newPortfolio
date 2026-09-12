@@ -1,0 +1,12 @@
+.about {
+  &__content {
+    display: flex;
+    gap: 30px;
+
+    &__info {
+      padding: 40px;
+      border: 1px solid var(--black-12);
+      border-radius: 20px;
+    }
+  }
+}
