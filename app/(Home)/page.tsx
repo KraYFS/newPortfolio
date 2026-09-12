@@ -1,12 +1,12 @@
 import './styles.scss'
 
-import Hero from './sections/Hero/Hero'
+import HeroSection from './sections/Hero/HeroSection'
 
 export default function Home() {
   return (
     <main>
       <div className='container'>
-        <Hero />
+        <HeroSection />
       </div>
     </main>
   )

@@ -12,8 +12,10 @@ export default function Hero() {
           </span>
           <h1 className='hero__content__heading-title'>Damien Braun</h1>
         </div>
+        тут пездатый фон
         <CtaBlock />
       </div>
+      и сюда придумать блок с примером работ
     </section>
   )
 }
