@@ -1,0 +1,20 @@
+.Cta-block {
+  span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__text {
+    position: relative;
+    font-size: 58px;
+    font-weight: 700;
+    color: var(--absolute-white);
+    text-transform: uppercase;
+  }
+
+  &__button {
+    top: 0px;
+    right: 10px;
+  }
+}

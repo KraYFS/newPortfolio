@@ -1,0 +1,24 @@
+.hero {
+  &__content {
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    &__heading {
+      text-transform: uppercase;
+
+      &-subtitle {
+        font-size: 22px;
+        color: var(--gray-40);
+      }
+
+      &-title {
+        font-size: 58px;
+        font-weight: 700;
+        color: var(--absolute-white);
+      }
+    }
+  }
+}
