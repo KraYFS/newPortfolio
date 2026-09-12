@@ -1,17 +1,13 @@
 import './styles.scss'
 
 import CtaBlock from '@/app/components/CtaBlock/CtaBlock'
+import SectionHeading from '@/app/components/UI/SectionHeading/SectionHeading'
 
 export default function Hero() {
   return (
     <section className='hero'>
       <div className='hero__content'>
-        <div className='hero__content__heading'>
-          <span className='hero__content__heading-subtitle'>
-            Stunning Photography
-          </span>
-          <h1 className='hero__content__heading-title'>Damien Braun</h1>
-        </div>
+        <SectionHeading title='Damien Braun' subtitle='Stunning Photography' />
         тут пездатый фон
         <CtaBlock />
       </div>
