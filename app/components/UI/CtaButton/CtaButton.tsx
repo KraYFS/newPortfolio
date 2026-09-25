@@ -3,7 +3,7 @@ import './styles.scss'
 import clsx from 'clsx'
 import Link from 'next/link'
 
-import Arrow from '@/public/arrow'
+import Arrow from '@/public/icons/arrow'
 
 export default function CtaButton({
   href,
