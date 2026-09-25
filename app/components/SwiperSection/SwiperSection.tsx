@@ -1,23 +1,33 @@
 import 'swiper/css'
 
-import { useState } from 'react'
+import { ReactNode, useState } from 'react'
 import type { Swiper as SwiperType } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import SectionHeading from '../UI/SectionHeading/SectionHeading'
 
-export default function SwiperSection() {
+export default function SwiperSection({
+  title,
+  subtitle,
+  buttonText,
+  buttonHref,
+  slides
+}: {
+  title: string
+  subtitle: string
+  buttonText: string
+  buttonHref: string
+  slides: ReactNode[]
+}) {
   const [swiper, setSwiper] = useState<SwiperType | null>(null)
 
-  console.log(swiper)
-
   return (
-    <section className='services'>
+    <>
       <SectionHeading
-        buttonText='View All Services'
-        buttonHref='/services'
-        title='My Photography Services'
-        subtitle='Services'
+        buttonText={buttonText}
+        buttonHref={buttonHref}
+        title={title}
+        subtitle={subtitle}
         swiper={{
           nextSlide: () => swiper?.slideNext(),
           prevSlide: () => swiper?.slidePrev()
@@ -26,13 +36,14 @@ export default function SwiperSection() {
       <Swiper
         slidesPerView={1}
         loop
-        controller
+        allowTouchMove={false}
         onSlideChange={() => console.log('change')}
         onSwiper={setSwiper}
       >
-        <SwiperSlide>123</SwiperSlide>
-        <SwiperSlide>123</SwiperSlide>
+        {slides.map((item, index) => {
+          return <SwiperSlide key={index}>{item}</SwiperSlide>
+        })}
       </Swiper>
-    </section>
+    </>
   )
 }
