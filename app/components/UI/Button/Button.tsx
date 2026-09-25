@@ -8,7 +8,7 @@ export default function Button({
   className,
   href
 }: {
-  text?: string
+  text: string
   className?: string
   href?: string
 }) {
