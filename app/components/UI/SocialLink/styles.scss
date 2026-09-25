@@ -1,0 +1,17 @@
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px;
+  color: var(--absolute-white);
+  background-color: var(--black-12);
+  border: none;
+  border-radius: 50%;
+  box-shadow: inset 1px 1px 1px 0 var(--black-20);
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+
+  &:hover {
+    background-color: var(--black-8);
+    box-shadow: inset -1px -1px 1px 0 var(--black-20);
+  }
+}

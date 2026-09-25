@@ -1,0 +1,73 @@
+.about {
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__info {
+    border: 1px solid var(--black-12);
+    border-radius: 20px;
+  }
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-bottom: 1px solid var(--black-12);
+
+    &-title {
+      font-size: 30px;
+      color: var(--gray-80);
+    }
+
+    &-text {
+      margin-top: 20px;
+      font-size: 18px;
+      color: var(--gray-70);
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 40px;
+
+    &-title {
+      font-size: 30px;
+      color: var(--gray-80);
+    }
+
+    &-links {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-label {
+      font-size: 18px;
+      color: var(--gray-90);
+    }
+
+    &-value {
+      margin-top: 5px;
+      font-size: 20px;
+      color: var(--gray-70);
+    }
+
+    &-actions {
+      display: flex;
+      gap: 20px;
+    }
+
+    &-btn {
+      width: 100%;
+    }
+  }
+}
