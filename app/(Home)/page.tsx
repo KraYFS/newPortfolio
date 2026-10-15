@@ -1,7 +1,10 @@
+'use client'
+
 import './styles.scss'
 
 import AboutSection from './sections/About/AboutSection'
 import HeroSection from './sections/Hero/HeroSection'
+import ServicesSection from './sections/Services/ServicesSection'
 
 export default function Home() {
   return (
@@ -9,6 +12,7 @@ export default function Home() {
       <div className='container'>
         <HeroSection />
         <AboutSection />
+        <ServicesSection />
       </div>
     </main>
   )
