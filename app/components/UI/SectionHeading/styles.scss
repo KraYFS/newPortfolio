@@ -17,4 +17,25 @@
     color: var(--gray-40);
     text-transform: uppercase;
   }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 30px;
+  }
+
+  &__slide-btns {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border: 1px solid var(--black-12);
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  &__slide-btn {
+    border-radius: 50%;
+    font-size: 22px;
+  }
 }
