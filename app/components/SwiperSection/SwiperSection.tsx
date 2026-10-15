@@ -11,13 +11,15 @@ export default function SwiperSection({
   subtitle,
   buttonText,
   buttonHref,
-  slides
+  slides,
+  slidesPerView
 }: {
   title: string
   subtitle: string
   buttonText: string
   buttonHref: string
   slides: ReactNode[]
+  slidesPerView: number
 }) {
   const [swiper, setSwiper] = useState<SwiperType | null>(null)
 
@@ -34,10 +36,9 @@ export default function SwiperSection({
         }}
       />
       <Swiper
-        slidesPerView={1}
+        slidesPerView={slidesPerView}
         loop
         allowTouchMove={false}
-        onSlideChange={() => console.log('change')}
         onSwiper={setSwiper}
       >
         {slides.map((item, index) => {

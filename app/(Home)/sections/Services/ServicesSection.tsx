@@ -37,6 +37,7 @@ export default function ServicesSection() {
   return (
     <section className='services'>
       <SwiperSection
+        slidesPerView={1}
         title='My Photography Services'
         subtitle='Services'
         buttonText='View All Services'
