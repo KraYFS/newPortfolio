@@ -12,7 +12,7 @@ export default function Testimonial({
 }: {
   name: string
   location: string
-  review?: string,
+  review?: string
   stars?: number
 }) {
   return (
