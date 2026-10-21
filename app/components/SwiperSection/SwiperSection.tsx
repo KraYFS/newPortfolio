@@ -12,7 +12,8 @@ export default function SwiperSection({
   buttonText,
   buttonHref,
   slides,
-  slidesPerView
+  slidesPerView,
+  gap
 }: {
   title: string
   subtitle: string
@@ -20,6 +21,7 @@ export default function SwiperSection({
   buttonHref: string
   slides: ReactNode[]
   slidesPerView: number
+  gap?: number
 }) {
   const [swiper, setSwiper] = useState<SwiperType | null>(null)
 
@@ -38,6 +40,7 @@ export default function SwiperSection({
       <Swiper
         slidesPerView={slidesPerView}
         loop
+        spaceBetween={gap}
         allowTouchMove={false}
         onSwiper={setSwiper}
       >
