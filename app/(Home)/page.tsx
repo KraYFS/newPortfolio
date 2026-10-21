@@ -4,6 +4,7 @@ import './styles.scss'
 
 import AboutSection from './sections/About/AboutSection'
 import HeroSection from './sections/Hero/HeroSection'
+import PortfolioSection from './sections/portfolio/PortfolioSection'
 import ServicesSection from './sections/Services/ServicesSection'
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ServicesSection />
+        <PortfolioSection />
       </div>
     </main>
   )

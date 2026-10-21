@@ -1,0 +1,39 @@
+.preview-project {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__heading {
+    margin-top: 20px;
+  }
+
+  &__title {
+    color: var(--gray-80);
+    font-size: 20px;
+  }
+
+  &__date {
+    color: var(--gray-50);
+    font-size: 18px;
+  }
+
+  &__link {
+    color: var(--gray-95);
+    font-size: 18px;
+    border-bottom: 1px solid var(--gray-95);
+    padding-bottom: 6px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: var(--gray-80);
+        border-bottom: 1px solid var(--gray-80);
+    }
+  }
+}
