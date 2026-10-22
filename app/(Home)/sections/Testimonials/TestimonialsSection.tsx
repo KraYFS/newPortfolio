@@ -34,14 +34,16 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <SwiperSection
-      title='What our clients say about us'
-      subtitle='Testimonials'
-      buttonText='View All Testimonials'
-      buttonHref='/testimonials'
-      slidesPerView={3}
-      gap={30}
-      slides={testimonials}
-    ></SwiperSection>
+    <section>
+      <SwiperSection
+        title='What our clients say about us'
+        subtitle='Testimonials'
+        buttonText='View All Testimonials'
+        buttonHref='/testimonials'
+        slidesPerView={3}
+        gap={30}
+        slides={testimonials}
+      ></SwiperSection>
+    </section>
   )
 }
