@@ -16,7 +16,7 @@ export default function Testimonial({
   stars?: number
 }) {
   return (
-    <div className='testimonial'>
+    <section className='testimonial'>
       <div className='testimonial__header'>
         <div className='testimonial__title'>
           <div className='testimonial__name'>{name}</div>
@@ -32,6 +32,6 @@ export default function Testimonial({
       <div className='testimonial__content'>
         <p>{review}</p>
       </div>
-    </div>
+    </section>
   )
 }
