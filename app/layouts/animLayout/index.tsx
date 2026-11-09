@@ -15,7 +15,7 @@ export default function AnimLayout({ children }: LayoutProps<'/'>) {
   const words = [
     'Oh, who is here?',
     'I haven`t seen you here before',
-    'What`s your name?'
+    'The site is currently under development; please check back later.'
   ]
 
   const [text] = useTypewriter({
@@ -34,7 +34,7 @@ export default function AnimLayout({ children }: LayoutProps<'/'>) {
         <div className='anim-layout__content'>
           <span
             className={clsx('anim-layout__text', {
-              'anim-layout__text--active': isActive
+              // 'anim-layout__text--active': isActive
             })}
           >
             {text}
@@ -42,7 +42,7 @@ export default function AnimLayout({ children }: LayoutProps<'/'>) {
           <Input
             placeholder='Your name'
             className={clsx('anim-layout__input', {
-              'anim-layout__input--active': isActive
+              // 'anim-layout__input--active': isActive
             })}
           />
           {/* <Button className='anim-layout__button' text='Welcome' /> */}
